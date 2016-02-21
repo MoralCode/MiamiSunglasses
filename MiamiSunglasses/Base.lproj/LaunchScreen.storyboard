@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -58,12 +57,6 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A custom app for Joe Sandmeier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zt4-Kq-698">
-                                <rect key="frame" x="121" y="191" width="358" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please turn your ringer on." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ce-Il-wSI">
                                 <rect key="frame" x="121" y="191" width="358" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -74,8 +67,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zt4-Kq-698" secondAttribute="trailing" constant="-20" id="6Yd-LS-irf"/>
-                            <constraint firstItem="zt4-Kq-698" firstAttribute="top" secondItem="GJd-Yh-RWb" secondAttribute="bottom" constant="8" id="C01-Ka-50v"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6ce-Il-wSI" secondAttribute="trailing" constant="-20" id="Cbr-yd-tBY"/>
                             <constraint firstItem="6ce-Il-wSI" firstAttribute="top" secondItem="GJd-Yh-RWb" secondAttribute="bottom" constant="8" id="LdK-4f-1ye">
                                 <variation key="widthClass=compact" constant="37"/>
@@ -90,36 +81,23 @@
                             <constraint firstItem="6ce-Il-wSI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="101" id="jlq-Qw-SNf">
                                 <variation key="widthClass=compact" constant="-20"/>
                             </constraint>
-                            <constraint firstItem="zt4-Kq-698" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="k0E-3V-MDg"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="bottom" multiplier="1/3" constant="-38.5" id="moa-c2-u7t"/>
                             <constraint firstItem="6ce-Il-wSI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="vW8-if-1sQ"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" symbolic="YES" id="x7j-FC-K8j"/>
                         </constraints>
                         <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="zt4-Kq-698"/>
-                            </mask>
                             <mask key="constraints">
                                 <exclude reference="Cbr-yd-tBY"/>
                                 <exclude reference="iCU-rV-8Jn"/>
-                                <exclude reference="6Yd-LS-irf"/>
-                                <exclude reference="C01-Ka-50v"/>
-                                <exclude reference="k0E-3V-MDg"/>
                                 <exclude reference="vW8-if-1sQ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="zt4-Kq-698"/>
-                            </mask>
                             <mask key="constraints">
                                 <include reference="Cbr-yd-tBY"/>
                                 <exclude reference="LdK-4f-1ye"/>
                                 <exclude reference="hom-Hy-XNN"/>
                                 <include reference="iCU-rV-8Jn"/>
-                                <include reference="6Yd-LS-irf"/>
-                                <include reference="C01-Ka-50v"/>
-                                <include reference="k0E-3V-MDg"/>
                                 <exclude reference="jlq-Qw-SNf"/>
                                 <include reference="vW8-if-1sQ"/>
                             </mask>
