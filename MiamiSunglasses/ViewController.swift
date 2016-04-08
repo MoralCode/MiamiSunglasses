@@ -51,7 +51,7 @@ class ViewController: UIViewController {
             
         }
         
-        counter++;
+        counter += 1;
       //  print(counter, appendNewline: true);
         
         
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
     
     func startTimer() {
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "update", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
     }
 
 
