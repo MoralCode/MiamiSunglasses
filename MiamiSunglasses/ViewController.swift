@@ -30,7 +30,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             yeah.delegate = self; //allows audioPlayerDidFinishPlaying to be called
         } catch _ { return }
         
-        yeah.numberOfLoops = 1
+        yeah.numberOfLoops = 0
         //yeah.volume = 1.0 //interesting... maybe i could add a volume slider later...
         yeah.prepareToPlay()
         
