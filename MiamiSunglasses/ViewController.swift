@@ -9,73 +9,67 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, AVAudioPlayerDelegate {
+
     
-   var bgMusic:AVAudioPlayer = AVAudioPlayer()
-    var counter = 0;
-    var timer = NSTimer();
+    var yeah:AVAudioPlayer = AVAudioPlayer()
+    var soundIsPlaying:Bool = false;
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        let bgMusicURL:NSURL = NSBundle.mainBundle().URLForResource("CSI Miami", withExtension: "mp3")!
+        //load resource
+        let audioURL:
+            NSURL = NSBundle.mainBundle().URLForResource("CSI Miami", withExtension: "mp3")!
         
         do {
-            bgMusic = try AVAudioPlayer(contentsOfURL: bgMusicURL, fileTypeHint: nil) } catch _ { return }
-        bgMusic.numberOfLoops = 1
-        bgMusic.prepareToPlay()
+            yeah = try AVAudioPlayer(contentsOfURL: audioURL, fileTypeHint: nil)
+            yeah.delegate = self; //allows audioPlayerDidFinishPlaying to be called
+        } catch _ { return }
+        
+        yeah.numberOfLoops = 1
+        //yeah.volume = 1.0 //interesting... maybe i could add a volume slider later...
+        yeah.prepareToPlay()
         
         
-
+        
     }
     
     @IBAction func playSound(sender: AnyObject) {
-        if !timer.valid {
+        print(soundIsPlaying)
         
-        //print("HIIIIII", appendNewline: true);
-        startTimer();
-        bgMusic.play()
+        if !soundIsPlaying {
+            
+            
+            yeah.play()
+            soundIsPlaying = true
         }
         else
         {
-           stopMusic()
+            yeah.stop()
+            yeah.currentTime = 0;
+            
+            soundIsPlaying = false
         }
     }
     
-    func update() {
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
         
-        if (counter == 10) {
-            
-            stopMusic()
-            
-        }
+        soundIsPlaying = false
         
-        counter += 1;
-      //  print(counter, appendNewline: true);
-        
-        
-    }
-
-    func stopMusic() {
-        
-        bgMusic.stop()
-        bgMusic.currentTime = 0;
-        counter = 0;
-        timer.invalidate()
     }
     
-    func startTimer() {
-        
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
-    }
-
-
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A5AD02F1CB80AF500F1EB27 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5AD02D1CB80AF500F1EB27 /* AVFoundation.framework */; };
 		3A8912521BB634F7004A780B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8912511BB634F7004A780B /* AppDelegate.swift */; };
 		3A8912541BB634F7004A780B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8912531BB634F7004A780B /* ViewController.swift */; };
 		3A8912571BB634F7004A780B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8912551BB634F7004A780B /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A5AD02D1CB80AF500F1EB27 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3A89124E1BB634F7004A780B /* MiamiSunglasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiamiSunglasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8912511BB634F7004A780B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8912531BB634F7004A780B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A5AD02F1CB80AF500F1EB27 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A5AD0301CB81A9400F1EB27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A5AD02D1CB80AF500F1EB27 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		3A8912451BB634F7004A780B = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +118,7 @@
 				3A89125A1BB634F7004A780B /* LaunchScreen.storyboard */,
 				3A89125D1BB634F7004A780B /* Info.plist */,
 				3A89127F1BB63D9B004A780B /* CSI Miami.mp3 */,
+				3A5AD0301CB81A9400F1EB27 /* Frameworks */,
 			);
 			path = MiamiSunglasses;
 			sourceTree = "<group>";
