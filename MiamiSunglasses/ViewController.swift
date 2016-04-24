@@ -42,10 +42,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         print(soundIsPlaying)
         
         if !soundIsPlaying {
-            
+            soundIsPlaying = true
             
             yeah.play()
-            soundIsPlaying = true
+            
         }
         else
         {
@@ -72,4 +72,3 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     
 }
-
