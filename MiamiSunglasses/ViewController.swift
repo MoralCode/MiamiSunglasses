@@ -39,7 +39,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     @IBAction func playSound(sender: AnyObject) {
-        print(soundIsPlaying)
         
         if !soundIsPlaying {
             soundIsPlaying = true
