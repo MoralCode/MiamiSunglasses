@@ -13,27 +13,8 @@
 		3A8912571BB634F7004A780B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8912551BB634F7004A780B /* Main.storyboard */; };
 		3A8912591BB634F7004A780B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8912581BB634F7004A780B /* Assets.xcassets */; };
 		3A89125C1BB634F7004A780B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A89125A1BB634F7004A780B /* LaunchScreen.storyboard */; };
-		3A8912671BB634F7004A780B /* MiamiSunglassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8912661BB634F7004A780B /* MiamiSunglassesTests.swift */; };
-		3A8912721BB634F7004A780B /* MiamiSunglassesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8912711BB634F7004A780B /* MiamiSunglassesUITests.swift */; };
 		3A8912801BB63D9B004A780B /* CSI Miami.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3A89127F1BB63D9B004A780B /* CSI Miami.mp3 */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3A8912631BB634F7004A780B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3A8912461BB634F7004A780B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3A89124D1BB634F7004A780B;
-			remoteInfo = MiamiSunglasses;
-		};
-		3A89126E1BB634F7004A780B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3A8912461BB634F7004A780B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3A89124D1BB634F7004A780B;
-			remoteInfo = MiamiSunglasses;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3A5AD02D1CB80AF500F1EB27 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -44,12 +25,6 @@
 		3A8912581BB634F7004A780B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A89125B1BB634F7004A780B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A89125D1BB634F7004A780B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A8912621BB634F7004A780B /* MiamiSunglassesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiamiSunglassesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A8912661BB634F7004A780B /* MiamiSunglassesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiamiSunglassesTests.swift; sourceTree = "<group>"; };
-		3A8912681BB634F7004A780B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A89126D1BB634F7004A780B /* MiamiSunglassesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiamiSunglassesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A8912711BB634F7004A780B /* MiamiSunglassesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiamiSunglassesUITests.swift; sourceTree = "<group>"; };
-		3A8912731BB634F7004A780B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A89127F1BB63D9B004A780B /* CSI Miami.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "CSI Miami.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,20 +34,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A5AD02F1CB80AF500F1EB27 /* AVFoundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A89125F1BB634F7004A780B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A89126A1BB634F7004A780B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,8 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				3A8912501BB634F7004A780B /* MiamiSunglasses */,
-				3A8912651BB634F7004A780B /* MiamiSunglassesTests */,
-				3A8912701BB634F7004A780B /* MiamiSunglassesUITests */,
 				3A89124F1BB634F7004A780B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,8 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				3A89124E1BB634F7004A780B /* MiamiSunglasses.app */,
-				3A8912621BB634F7004A780B /* MiamiSunglassesTests.xctest */,
-				3A89126D1BB634F7004A780B /* MiamiSunglassesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,24 +78,6 @@
 				3A5AD0301CB81A9400F1EB27 /* Frameworks */,
 			);
 			path = MiamiSunglasses;
-			sourceTree = "<group>";
-		};
-		3A8912651BB634F7004A780B /* MiamiSunglassesTests */ = {
-			isa = PBXGroup;
-			children = (
-				3A8912661BB634F7004A780B /* MiamiSunglassesTests.swift */,
-				3A8912681BB634F7004A780B /* Info.plist */,
-			);
-			path = MiamiSunglassesTests;
-			sourceTree = "<group>";
-		};
-		3A8912701BB634F7004A780B /* MiamiSunglassesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3A8912711BB634F7004A780B /* MiamiSunglassesUITests.swift */,
-				3A8912731BB634F7004A780B /* Info.plist */,
-			);
-			path = MiamiSunglassesUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,42 +100,6 @@
 			productReference = 3A89124E1BB634F7004A780B /* MiamiSunglasses.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3A8912611BB634F7004A780B /* MiamiSunglassesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3A8912791BB634F7004A780B /* Build configuration list for PBXNativeTarget "MiamiSunglassesTests" */;
-			buildPhases = (
-				3A89125E1BB634F7004A780B /* Sources */,
-				3A89125F1BB634F7004A780B /* Frameworks */,
-				3A8912601BB634F7004A780B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3A8912641BB634F7004A780B /* PBXTargetDependency */,
-			);
-			name = MiamiSunglassesTests;
-			productName = MiamiSunglassesTests;
-			productReference = 3A8912621BB634F7004A780B /* MiamiSunglassesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3A89126C1BB634F7004A780B /* MiamiSunglassesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3A89127C1BB634F7004A780B /* Build configuration list for PBXNativeTarget "MiamiSunglassesUITests" */;
-			buildPhases = (
-				3A8912691BB634F7004A780B /* Sources */,
-				3A89126A1BB634F7004A780B /* Frameworks */,
-				3A89126B1BB634F7004A780B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3A89126F1BB634F7004A780B /* PBXTargetDependency */,
-			);
-			name = MiamiSunglassesUITests;
-			productName = MiamiSunglassesUITests;
-			productReference = 3A89126D1BB634F7004A780B /* MiamiSunglassesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,14 +112,7 @@
 					3A89124D1BB634F7004A780B = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = UJPCPV3425;
-					};
-					3A8912611BB634F7004A780B = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = 3A89124D1BB634F7004A780B;
-					};
-					3A89126C1BB634F7004A780B = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = 3A89124D1BB634F7004A780B;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -234,8 +130,6 @@
 			projectRoot = "";
 			targets = (
 				3A89124D1BB634F7004A780B /* MiamiSunglasses */,
-				3A8912611BB634F7004A780B /* MiamiSunglassesTests */,
-				3A89126C1BB634F7004A780B /* MiamiSunglassesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,20 +146,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A8912601BB634F7004A780B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A89126B1BB634F7004A780B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -278,36 +158,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A89125E1BB634F7004A780B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A8912671BB634F7004A780B /* MiamiSunglassesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A8912691BB634F7004A780B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A8912721BB634F7004A780B /* MiamiSunglassesUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3A8912641BB634F7004A780B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3A89124D1BB634F7004A780B /* MiamiSunglasses */;
-			targetProxy = 3A8912631BB634F7004A780B /* PBXContainerItemProxy */;
-		};
-		3A89126F1BB634F7004A780B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3A89124D1BB634F7004A780B /* MiamiSunglasses */;
-			targetProxy = 3A89126E1BB634F7004A780B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3A8912551BB634F7004A780B /* Main.storyboard */ = {
@@ -422,6 +273,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.adriancedwards.MiamiSunglasses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -438,59 +290,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.adriancedwards.MiamiSunglasses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		3A89127A1BB634F7004A780B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MiamiSunglassesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adriancedwards.MiamiSunglassesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiamiSunglasses.app/MiamiSunglasses";
-			};
-			name = Debug;
-		};
-		3A89127B1BB634F7004A780B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MiamiSunglassesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adriancedwards.MiamiSunglassesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiamiSunglasses.app/MiamiSunglasses";
-			};
-			name = Release;
-		};
-		3A89127D1BB634F7004A780B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = MiamiSunglassesUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adriancedwards.MiamiSunglassesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = MiamiSunglasses;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		3A89127E1BB634F7004A780B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = MiamiSunglassesUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adriancedwards.MiamiSunglassesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = MiamiSunglasses;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -511,24 +312,6 @@
 			buildConfigurations = (
 				3A8912771BB634F7004A780B /* Debug */,
 				3A8912781BB634F7004A780B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3A8912791BB634F7004A780B /* Build configuration list for PBXNativeTarget "MiamiSunglassesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A89127A1BB634F7004A780B /* Debug */,
-				3A89127B1BB634F7004A780B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3A89127C1BB634F7004A780B /* Build configuration list for PBXNativeTarget "MiamiSunglassesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A89127D1BB634F7004A780B /* Debug */,
-				3A89127E1BB634F7004A780B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

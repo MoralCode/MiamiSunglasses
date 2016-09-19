@@ -23,10 +23,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         //load resource
         let audioURL:
-            NSURL = NSBundle.mainBundle().URLForResource("CSI Miami", withExtension: "mp3")!
+            URL = Bundle.main.url(forResource: "CSI Miami", withExtension: "mp3")!
         
         do {
-            yeah = try AVAudioPlayer(contentsOfURL: audioURL, fileTypeHint: nil)
+            yeah = try AVAudioPlayer(contentsOf: audioURL, fileTypeHint: nil)
             yeah.delegate = self; //allows audioPlayerDidFinishPlaying to be called
         } catch _ { return }
         
@@ -38,7 +38,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
-    @IBAction func playSound(sender: AnyObject) {
+    @IBAction func playSound(_ sender: AnyObject) {
         
         if !soundIsPlaying {
             soundIsPlaying = true
@@ -55,7 +55,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         }
     }
     
-    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         
         soundIsPlaying = false
         
