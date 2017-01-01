@@ -14,16 +14,18 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
 
     
     var yeah:AVAudioPlayer = AVAudioPlayer()
-    var soundIsPlaying:Bool = false;
-    
+    var soundIsPlaying:Bool = false
+    var audioURL:URL = Bundle.main.url(forResource: "CSI Miami", withExtension: "mp3")!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //load resource
-        let audioURL:
-            URL = Bundle.main.url(forResource: "CSI Miami", withExtension: "mp3")!
+        
+        if !FileManager.default.fileExists(atPath: audioURL.path) {
+            print("CSI Miami.mp3 file not found")
+        }
+
         
         do {
             yeah = try AVAudioPlayer(contentsOf: audioURL, fileTypeHint: nil)
