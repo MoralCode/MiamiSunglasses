@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,28 +20,15 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4T-yi-RsK">
-                                <rect key="frame" x="37.5" y="208.5" width="300" height="250"/>
+                                <rect key="frame" x="20" y="-60" width="528" height="440"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Uk4-vD-T0q"/>
-                                    <constraint firstAttribute="height" constant="250" id="XsB-SZ-9YX"/>
+                                    <constraint firstAttribute="width" secondItem="c4T-yi-RsK" secondAttribute="height" multiplier="6:5" id="mgQ-Yq-Y3x"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="Image"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Uk4-vD-T0q"/>
-                                        <exclude reference="XsB-SZ-9YX"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="Uk4-vD-T0q"/>
-                                        <include reference="XsB-SZ-9YX"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5U-5L-62g"/>
                                 </connections>
@@ -48,27 +36,20 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="c4T-yi-RsK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="22s-WC-dvF"/>
                             <constraint firstItem="c4T-yi-RsK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4RT-hA-zWh"/>
-                            <constraint firstItem="c4T-yi-RsK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AaU-8v-Jk0"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c4T-yi-RsK" secondAttribute="bottom" constant="20" id="Qvc-RC-nOw"/>
+                            <constraint firstItem="c4T-yi-RsK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UHx-3P-EbG"/>
+                            <constraint firstItem="c4T-yi-RsK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lY0-sj-LDA"/>
+                            <constraint firstItem="c4T-yi-RsK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lf7-a4-pyN"/>
                             <constraint firstItem="c4T-yi-RsK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="mnJ-4O-uSU"/>
                             <constraint firstItem="c4T-yi-RsK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="okD-OA-pee">
                                 <variation key="heightClass=compact" constant="20"/>
                                 <variation key="widthClass=compact" constant="21"/>
                             </constraint>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="22s-WC-dvF"/>
-                                <exclude reference="AaU-8v-Jk0"/>
-                            </mask>
-                        </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="22s-WC-dvF"/>
                                 <exclude reference="4RT-hA-zWh"/>
-                                <include reference="AaU-8v-Jk0"/>
                                 <exclude reference="mnJ-4O-uSU"/>
                                 <exclude reference="okD-OA-pee"/>
                                 <exclude reference="Qvc-RC-nOw"/>
