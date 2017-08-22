@@ -1,3 +1,8 @@
+<p align="center">
+    <img src="https://github.com/DeveloperACE/MiamiSunglasses/blob/master/MiamiSunglasses/Assets.xcassets/Image.imageset/sunglasses.jpeg">
+</p>
+
+
 # MiamiSunglasses
 This app is a single-sound soundboard that plays the first few seconds of the CSI Miami theme song when you press the sunglasses.
 
