@@ -14,26 +14,22 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
 
     
     var yeah:AVAudioPlayer = AVAudioPlayer()
-    var soundIsPlaying:Bool = false
     var audioURL:URL = Bundle.main.url(forResource: "CSI Miami", withExtension: "mp3")!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        if !FileManager.default.fileExists(atPath: audioURL.path) {
-            print("CSI Miami.mp3 file not found")
-        }
+        //make sure file exists
+        if !FileManager.default.fileExists(atPath: audioURL.path) {print("CSI Miami.mp3 file not found")}
 
         
         do {
             yeah = try AVAudioPlayer(contentsOf: audioURL, fileTypeHint: nil)
-            yeah.delegate = self; //allows audioPlayerDidFinishPlaying to be called
-        } catch _ { return }
-        
-        do {
+            //yeah.delegate = self; //allows audioPlayerDidFinishPlaying to be called
+            
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+
         } catch _ { return }
         
         yeah.numberOfLoops = 0
@@ -45,30 +41,14 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     @IBAction func playSound(_ sender: AnyObject) {
-        
-        if !soundIsPlaying {
-            soundIsPlaying = true
-            
-            yeah.play()
-            
-        }
-        else
-        {
+        if yeah.isPlaying {
+            //stop and start over from beginning
             yeah.stop()
             yeah.currentTime = 0;
-            
-            soundIsPlaying = false
+        } else {
+            yeah.play()
         }
     }
-    
-    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        
-        soundIsPlaying = false
-        
-    }
-    
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
